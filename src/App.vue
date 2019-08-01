@@ -14,7 +14,7 @@ export default {
     Navbar
   }
 }
-</script>f
+</script>
 
 <style>
 /*#app {*/
