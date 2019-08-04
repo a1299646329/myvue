@@ -2,7 +2,7 @@
     <div id="header">
       <div class="search">
         <img src="../assets/title.png">
-        <form id="head_right">
+        <form>
           <input type="text" class="input_text" placeholder="请输入关键字">
           <input class='input_submit' type="submit" value="搜索">
         </form>
@@ -21,7 +21,7 @@
 
 <script>
     export default {
-        name: "Navbar",
+        name: "Head",
     }
 </script>
 
@@ -64,15 +64,10 @@
     line-height: 28px;
     border-radius: 5px;
   }
-  #head_right{
-    /*float:right;*/
-    /*margin: auto;*/
-    /*clear:both;*/
-    /*line-height: inherit;*/
-    float: right;
-    margin:25px;
-  }
   .search {
-
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
   }
 </style>

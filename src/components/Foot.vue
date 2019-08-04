@@ -12,9 +12,7 @@
 
 <style scoped>
   .foot {
-    width: inherit;
-    position:fixed;
-    bottom:0;
+    text-align: center;
     background-color: #333333;
   }
 </style>
