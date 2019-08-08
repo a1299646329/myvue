@@ -1,21 +1,15 @@
 <template>
   <div id="app">
-    <Head></Head>
     <router-view></router-view>
-    <Foot></Foot>
   </div>
 </template>
 
 <script>
-import Head from "./components/Head";
-import Foot from  "./components/Foot"
-export default {
-  name: 'App',
-  components: {
-    Head,
-    Foot
+  export default {
+    name: 'App',
+    components: {
+    }
   }
-}
 </script>
 
 <style>

@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <Head></Head>
     <div id="inner">
       <Card></Card>
       <Card></Card>
@@ -10,15 +12,20 @@
       <Card></Card>
       <Card></Card>
     </div>
+    <Foot></Foot>
+  </div>
 </template>
 
 <script>
-  import Card from "../components/Card"
+  import Card from "../components/Card";
+  import Head from "../components/Head";
+  import Foot from "../components/Foot";
   export default {
     name: "Index",
-    components: {Card},
-    comments:{
-      Card
+    components:{
+      Card,
+      Head,
+      Foot
     }
   }
 </script>
