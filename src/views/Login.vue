@@ -1,39 +1,61 @@
 <template>
-    <div class='login_layout'>
-      	<div class="top">
-      		<h1>博客管理系统</h1>
-      	</div>
-      	<form>
-            <div>
-                <label>用户名：</label>
-                <input type="text" value="" v-model="name" placeholder="请输入用户名">
-            </div>
-            <div>
-                <label>密码：</label>
-                <input type="text" value="" v-model="age" placeholder="请输入年龄">
-            </div>
-            <div>
-                <button @click="submitForm($event)">登录</button>
-            </div>
-      	</form>
+    <div class="login-body">
+        <div class='login-layout'>
+          	<div class="top">
+          		<h1>博客管理系统</h1>
+          	</div>
+          	<form>
+                <div id='form-user'>
+                    <label>用户名：</label>
+                    <input type="text" value="" v-model="name" placeholder="请输入用户名">
+                </div>
+                <div id='form-pwd'>
+                    <label>密码：</label>
+                    <input type="text" value="" v-model="age" placeholder="请输入年龄">
+                </div>
+                <div id='form-btn'>
+                    <button @click="submitForm($event)">登录</button>
+                </div>
+          	</form>
+        <canvas id='canvas'></canvas>
+        </div>
     </div>
 </template>
 
 <script>
-
+  import { CanvasParticle } from '../assets/js/canvas-particle.js'
   export default {
     name: "Login",
-    components:{
+    data() {
+        return {
+            name:'',
+            age:''
+        }
+    },
+    methods: {
+        isHhhh (config){
+            CanvasParticle(config)
+        }
+    },
+    mounted(){
+        var config = {
+            vx: 4,
+            vy:  4,
+            height: 2,
+            width: 2,
+            count: 150,
+            color: "121, 162, 185",
+            stroke: "100,200,180",
+            dist: 6000,
+            e_dist: 20000,
+            max_conn: 10
+        }
+
+        this.isHhhh(config);
     }
-  }
+}
 </script>
 
 <style scoped>
-	.login_layout {
-        background-color: #F11111;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-	}
-
+    @import '../assets/css/login.css';
 </style>

@@ -11,8 +11,5 @@
 </script>
 
 <style scoped>
-  .foot {
-    text-align: center;
-    background-color: #333333;
-  }
+    @import '../assets/css/foot.css'
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="header">
+    <div id="head_body">
       <div class="search">
         <img src="../assets/title.png">
         <form>
@@ -26,48 +26,5 @@
 </script>
 
 <style scoped>
-  .el-menu{
-    margin: 10px 0;
-    padding-left: 50px;
-    /*background-color: #EEF1F6;*/
-    background-color: rgba(0, 0, 0, 0);
-    border: #cccccc;
-    font-size:18px;
-  }
-  .el-menu-item {
-    color:black !important;
-  }
-  .el-menu-item:hover{
-    background-color: rgba(0, 0, 0, 0) !important;
-    color:blue !important;
-  }
-  .el-menu-item:focus{
-    background-color: rgba(0, 0, 0, 0) !important;
-  }
-  .input_text {
-    padding-left: 5px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    width: 158px;
-    height: 26px;
-    line-height: 26px;
-    background-color: #e5e5e5;
-  }
-  .input_submit {
-    background-color: #333;
-    color: #FFF;
-    margin-left: 5px;
-    width: 50px;
-    border: none;
-    cursor: pointer;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 5px;
-  }
-  .search {
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-  }
+    @import '../assets/css/head.css';
 </style>

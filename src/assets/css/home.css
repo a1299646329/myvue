@@ -1,0 +1,19 @@
+/*
+* @Author: zlcao
+* @Date:   2019-08-09 11:29:27
+* @Last Modified by:   zlcao
+* @Last Modified time: 2019-08-09 12:12:19
+*/
+#home_body {
+
+}
+
+#inner {
+    width: 1170px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 10px 10px;
+    justify-content: space-around;
+}

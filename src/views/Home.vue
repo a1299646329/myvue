@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home-body">
     <Head></Head>
     <div id="inner">
       <Card></Card>
@@ -21,7 +21,7 @@
   import Head from "../components/Head";
   import Foot from "../components/Foot";
   export default {
-    name: "Index",
+    name: "Home",
     components:{
       Card,
       Head,
@@ -31,13 +31,5 @@
 </script>
 
 <style scoped>
-  #inner {
-    width: 1170px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    grid-gap: 10px 10px;
-    justify-content: space-around;
-  }
+
 </style>

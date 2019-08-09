@@ -13,8 +13,5 @@
 </script>
 
 <style>
-  #app {
-    width: 1170px;
-    margin: auto;
-  }
+    @import './assets/css/common.css';
 </style>
