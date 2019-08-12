@@ -31,5 +31,5 @@
 </script>
 
 <style scoped>
-
+  @import '../assets/css/home.css'
 </style>

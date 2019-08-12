@@ -15,6 +15,7 @@
 
 <style scoped>
   .card {
+    max-width: 500px;
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
     margin: 0;

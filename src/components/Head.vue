@@ -22,6 +22,13 @@
 <script>
     export default {
         name: "Head",
+        data() {
+          return {
+            activeIndex: '',
+            handleSelect: '',
+            select: ''
+          }
+        }
     }
 </script>
 

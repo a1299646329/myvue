@@ -2,7 +2,7 @@
 * @Author: zlcao
 * @Date:   2019-08-09 15:13:49
 * @Last Modified by:   zlcao
-* @Last Modified time: 2019-08-09 18:23:02
+* @Last Modified time: 2019-08-12 12:29:28
 */
 var CanvasParticle = (function(){
     function getElementByTag(name){

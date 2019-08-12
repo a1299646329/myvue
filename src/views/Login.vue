@@ -18,13 +18,40 @@
                 </div>
           	</form>
         </div>
-        <div id="canvas-bg">
-            <canvas id='canvas'>111</canvas>
-        </div>
+        <vue-particles
+        color="#fff"
+        :particleOpacity="0.7"
+        :particlesNumber="60"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#fff"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="2"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+        class="lizi">
+      </vue-particles>
     </div>
 </template>
 
 <script>
+  export default {
+    name: "Login",
+    data() {
+        return {
+            name:'',
+            age:''
+        }
+    }
+}
+</script>
+
+<!-- <script>
   import { CanvasParticle } from '../assets/js/canvas-particle.js'
   export default {
     name: "Login",
@@ -36,10 +63,11 @@
     },
     methods: {
         isHhhh (config){
-            CanvasParticle(config)
+            var chat=CanvasParticle(config);
+            console.log(chat);
         }
     },
-    created(){
+    mounted(){
         var config = {
             vx: 4,//点x轴速度,正为右，负为左
             vy:  4,//点y轴速度
@@ -54,18 +82,13 @@
         }
         this.isHhhh(config);
     },
-    // beforeDestroy() {
-    //     console.log('1111111111111');
-    //     var loginBody=document.getElementById("login-body");
-    //     console.log(loginBody);
-    //     var canvasBg=document.getElementById("canvas-bg");
-    //     console.log(canvasBg);
-    //     loginBody.removeChild(canvasBg);
-    //     console.log(this.$refs.canvas);
-    //     console.log('2222222')
-    // }
+    beforeDestroy() {
+        console.log('1111111111111');
+        console.log(this.chat)
+        this.chat.destroy();
+    }
 }
-</script>
+</script> -->
 
 <style scoped>
     @import '../assets/css/login.css';
