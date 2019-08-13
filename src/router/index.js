@@ -3,8 +3,11 @@ import Router from 'vue-router'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
 import Admin from '@/views/Admin'
+// import mavonEditor from 'mavon-editor'
+// import 'mavon-editor/dist/css/index.css'
 
 Vue.use(Router)
+// Vue.use(mavonEditor)
 
 export default new Router({
   mode: 'history',
