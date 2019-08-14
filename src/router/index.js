@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/views/Home'
-import Login from '@/views/Login'
-import Admin from '@/views/Admin'
+import Home from '@/components/front/Home'
+import Login from '@/components/back/Login'
+import Admin from '@/components/back/Admin'
 // import mavonEditor from 'mavon-editor'
 // import 'mavon-editor/dist/css/index.css'
 
