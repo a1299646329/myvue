@@ -17,9 +17,9 @@
 </template>
 
 <script>
-  import Card from "../base/Card";
-  import Head from "../base/Head";
-  import Foot from "../base/Foot";
+  import Card from "./Card";
+  import Head from "./Head";
+  import Foot from "./Foot";
   export default {
     name: "Home",
     components:{
