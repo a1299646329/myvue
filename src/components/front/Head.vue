@@ -12,9 +12,9 @@
         <el-menu-item index="1" @click="$router.push('/')">首页</el-menu-item>
         <el-menu-item index="2" @click="$router.push('/page2')">python</el-menu-item>
         <el-menu-item index="3" @click="$router.push('/login')">linux</el-menu-item>
-        <el-menu-item index="4" @click="$router.push('/admin')">归档</el-menu-item>
-        <el-menu-item index="5" @click="$router.push('/life')">生活</el-menu-item>
-        <el-menu-item index="6" @click="$router.push('/aboutme')">关于我</el-menu-item>
+        <el-menu-item index="4" @click="$router.push('/dashboard')">归档</el-menu-item>
+        <el-menu-item index="5" @click="$router.push('/dashboard')">生活</el-menu-item>
+        <el-menu-item index="6" @click="$router.push('/dashboard')">关于我</el-menu-item>
       </el-menu>
     </div>
 </template>

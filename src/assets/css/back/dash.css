@@ -1,0 +1,19 @@
+/*
+* @Author: zlcao
+* @Date:   2019-08-19 18:18:11
+* @Last Modified by:   zlcao
+* @Last Modified time: 2019-08-19 18:18:31
+*/
+#container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    overflow-y: auto;
+    background-color: #fff;
+}
+#dash {
+    width: 1170px;
+    margin: 0 auto;
+}

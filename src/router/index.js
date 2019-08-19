@@ -2,12 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/front/Home'
 import Login from '@/components/back/Login'
-import Admin from '@/components/back/Admin'
-// import mavonEditor from 'mavon-editor'
-// import 'mavon-editor/dist/css/index.css'
+import Dash from '@/components/back/Dashboard'
+import Edit from '@/components/back/Edit'
 
 Vue.use(Router)
-// Vue.use(mavonEditor)
+
 
 export default new Router({
   mode: 'history',
@@ -23,9 +22,14 @@ export default new Router({
       component: Login
     },
     {
-      path: '/admin',
-      name: "Admin",
-      component: Admin
+      path: '/dashboard',
+      name: "back",
+      component: Dash
+    },
+    {
+      path: '/edit',
+      name: "back",
+      component: Edit
     }
   ]
 })
