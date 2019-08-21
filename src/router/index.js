@@ -4,6 +4,7 @@ import Home from '@/components/front/Home'
 import Login from '@/components/back/Login'
 import Dash from '@/components/back/Dashboard'
 import Edit from '@/components/back/Edit'
+import ArticleList from '@/components/back/ArticleList'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/edit',
       name: "back",
       component: Edit
+    },
+    {
+      path: '/articlelist',
+      name: "back",
+      component: ArticleList
     }
   ]
 })
